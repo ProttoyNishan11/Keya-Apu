@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Sis!</title>
+    <link rel="stylesheet" href="F:\Website keya/keya.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora&display=swap" rel="stylesheet">
+<div class="photos">
+    <h2>Memories with You</h2>
+    <img src="F:/Website keya/1.jpg" alt="Photo 1" class="image left-image">
+    <img src="F:/Website keya/2.jpg" alt="Photo 2" class="image left-image">
+</div>
+
+</head>
+<body>
+    <div class="card">
+        <div class="front">
+            <h1>Happy Birthday, Sis!</h1>
+        </div>
+        <div class="inside">
+            <p>Wishing you a day filled with love, joy, and all your favorite things. You're more than a sister; you're a best friend and a blessing in my life.</p>
+            <p>May this year bring you everything your heart desires!</p>
+        </div>
+    </div>
+<div class="photos">
+    <h2>Memories with You</h2>
+    <img src="F:/Website keya/3.jpg" alt="Photo 1" class="image right-image">
+    <img src="F:/Website keya/4.jpg" alt="Photo 2" class="image right-image">
+</div>
+
+<script>
+    window.onload = function() {
+        setTimeout(function() {
+            document.querySelector('.card').classList.add('show');
+        }, 500); // Delay for wish
+
+        setTimeout(function() {
+            document.querySelectorAll('.left-image').forEach(img => {
+                img.classList.add('show');
+            });
+        }, 1500); // Delay for left images
+
+        setTimeout(function() {
+            document.querySelectorAll('.right-image').forEach(img => {
+                img.classList.add('show');
+            });
+        }, 2500); // Delay for right images
+    };
+    </script>
+</body>
+</html>
